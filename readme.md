@@ -1,0 +1,5 @@
+- `git clone https://github.com/DKennySh/starter_tamplate.git project_name` - создание нового проекта
+- открываем проект в редакторе кода и в терминале выполняем две след. команды
+- `npm i` - установка зависимостей
+- `npm run dev` - запуск среды разработки
+- `npm run build` - сборка проекта на продакшн# trucks

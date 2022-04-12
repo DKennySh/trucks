@@ -1,0 +1,35 @@
+{
+  "name": "starter_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "npx mix watch",
+    "build": "npx mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DKennySh/starter_tamplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DKennySh/starter_tamplate/issues"
+  },
+  "homepage": "https://github.com/DKennySh/starter_tamplate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.43",
+    "postcss-combine-duplicated-selectors": "^10.0.3",
+    "postcss-sort-media-queries": "^4.2.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0"
+  },
+  "browserslist": "last 10 versions",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "normalize.css": "^8.0.1"
+  }
+}
