@@ -88,3 +88,20 @@ body {
     }
   }
 }
+
+.innovations {
+  background-size: cover;
+  background-position: left;
+
+  &__content {
+    color: #fff;
+  }
+
+  &__suptitle {
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 3em;
+  }
+}

@@ -433,6 +433,20 @@ body {
 .banner__link svg {
   height: 60px;
 }
+
+.innovations {
+  background-size: cover;
+  background-position: left;
+}
+.innovations__content {
+  color: #fff;
+}
+.innovations__suptitle {
+  text-transform: uppercase;
+}
+.innovations__title {
+  font-size: 3em;
+}
 @media (min-width: 1024px){
   .banner__content {
     padding: 80px 10px 80px 50%;
