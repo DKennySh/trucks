@@ -92,6 +92,7 @@ body {
 .innovations {
   background-size: cover;
   background-position: left;
+  display: flex;
 
   &__content {
     color: #fff;
@@ -103,5 +104,27 @@ body {
 
   &__title {
     font-size: 3em;
+    margin-bottom: 40px;
+
+    &::after {
+      content: "";
+      display: block;
+      background: #fff;
+      width: 80px;
+      height: 1px;
+    }
+  }
+
+  &__btn {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid;
+    padding: 10px 25px;
+  }
+
+  &__img img {
+    max-width: 729px;
+    max-height: 491px;
   }
 }
