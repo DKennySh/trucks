@@ -51,7 +51,7 @@ body {
     right: 0;
     bottom: 0;
   }
-  
+
   &__content {
     position: relative;
     padding: 80px 10px;
@@ -90,12 +90,23 @@ body {
 }
 
 .innovations {
-  background-size: cover;
-  background-position: left;
-  display: flex;
+  position: relative;
+
+  &:before {
+    content: "";
+    background-color: var(--color-main);
+    position: absolute;
+    height: 100%;
+    width: calc(50% + 60px);
+    z-index: -1;
+    transform: skew(-10deg);
+    left: -60px;
+  }
 
   &__content {
     color: #fff;
+    padding-top: 40px;
+    display: flex;
   }
 
   &__suptitle {
@@ -121,6 +132,7 @@ body {
     text-transform: uppercase;
     border: 1px solid;
     padding: 10px 25px;
+
   }
 
   &__img img {
