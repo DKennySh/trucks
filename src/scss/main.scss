@@ -65,6 +65,10 @@ body {
       text-align: center;
     }
 
+    @media (max-width: 1022px) {
+      padding: 80px;
+    }
+
     &, a {
       color: #fff;
     }
@@ -73,11 +77,20 @@ body {
   &__title {
     font-size: 4.5rem;
     line-height: 1.2;
-    margin: 0 0 0.4em 0;
+    margin: 0 280px 0.4em 0;
+
+    @media (max-width: 1022px) {
+      margin-right: 0;
+    }
   }
 
   &__subtitle {
     font-size: 22px;
+    margin-right: 320px;
+
+    @media (max-width: 1022px) {
+      margin-right: 0;
+    }
   }
 
   &__link {
@@ -92,6 +105,15 @@ body {
 .innovations {
   position: relative;
 
+  &__text {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: -45px;
+  }
+
   &:before {
     content: "";
     background-color: var(--color-main);
@@ -99,23 +121,22 @@ body {
     height: 100%;
     width: calc(50% + 60px);
     z-index: -1;
-    transform: skew(-10deg);
-    left: -60px;
+    transform: skew(-9deg);
+    left: -120px;
   }
 
   &__content {
     color: #fff;
-    padding-top: 40px;
+    padding-top: 60px;
     display: flex;
+    justify-content: space-around;
   }
 
-  &__suptitle {
-    text-transform: uppercase;
-  }
 
   &__title {
-    font-size: 3em;
-    margin-bottom: 40px;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    margin-top: -10px;
 
     &::after {
       content: "";
@@ -123,7 +144,17 @@ body {
       background: #fff;
       width: 80px;
       height: 1px;
+      margin-top: 10px;
     }
+  }
+
+  &__suptitle {
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  &__description {
+    padding-bottom: 20px;
   }
 
   &__btn {
@@ -132,11 +163,22 @@ body {
     text-transform: uppercase;
     border: 1px solid;
     padding: 10px 25px;
+  }
 
+  &__img {
+    width: 30%;
   }
 
   &__img img {
-    max-width: 729px;
-    max-height: 491px;
+    max-width: 720px;
+    margin-left: -200px;
+    margin-top: -20px;
   }
 }
+
+@media (max-width: 1269px) {
+  .banner__title {
+    margin-right: 150px;
+  }
+}
+
